@@ -20,7 +20,7 @@ public class UserControllerIntegrationTest extends AbstractControllerIntegration
 
     @After
     public void tearDown() {
-        getRedisTemplate().getConnectionFactory().getConnection().flushAll();
+        getRedisTemplate().getConnectionFactory().getConnection().flushDb();
     }
 
     @Test
