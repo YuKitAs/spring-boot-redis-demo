@@ -13,7 +13,7 @@ import yukitas.spring.boot.redis.demo.model.User;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration(classes = RedisTestConfiguration.class)
-public class AbstractControllerIntegrationTest {
+public abstract class AbstractControllerIntegrationTest {
     @Autowired
     private RedisTemplate<String, User> redisTemplate;
 
