@@ -13,10 +13,12 @@ Install `redis-cli`:
 $ sudo apt install redis-tools
 ```
 
-Run application with `dev` profile:
+Run application:
 
 ```console
-$ mvn spring-boot:run -Dspring.profiles.active=dev
+$ mvn spring-boot:run 
 ```
 
 Base URL: `http://localhost:8081`
+
+Health check: `http://localhost:9000/health`
